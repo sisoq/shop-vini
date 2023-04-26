@@ -1,0 +1,135 @@
+/* Defining the main fonts and colors for the website */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #F5F5F5;
+    }
+    
+    /* Button design */
+    .button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    }
+    
+    /* Input field design */
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    }
+    
+    /* Defining the general framework for the website */
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    }
+    
+    /* Main navigation menu design */
+    .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    }
+    
+    /* Defining the style for navigation menu items */
+    .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    
+    .nav ul li {
+    margin-left: 16px;
+    }
+    
+    .nav ul li:first-child {
+    margin-left: 0;
+    }
+    
+    .nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    
+    /* Sub-navigation menu design */
+    .sub-nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #ffffff;
+    width: 200px;
+    border: 1px solid #cccccc;
+    z-index: 1;
+    }
+    
+    .sub-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .sub-nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
+    }
+    
+    .sub-nav ul li:last-child {
+    border-bottom: none;
+    }
+    
+    .sub-nav ul li a {
+    display: block;
+    padding: 8px;
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    }
+    
+    .sub-nav ul li a:hover {
+    background-color: #f5f5f5;
+    }
+    
+    /* Defining the hover state for buttons and navigation menu items */
+    .button:hover,
+    .nav ul li a:hover,
+    .sub-nav ul li a:hover {
+    cursor: pointer;
+    }
+    
+    /* Defining the style for controlling elements when the screen is resized */
+    @media (max-width: 768px) {
+    .nav {
+    justify-content: center;
+    }
+    
+    .nav ul {
+    display: none;
+    }
+    
+    .sub-nav {
+    display: block;
+    }
+    }
